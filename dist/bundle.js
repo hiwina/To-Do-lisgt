@@ -21,7 +21,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "* {\n  box-sizing: border-box;\n}", "",{"version":3,"sources":["webpack://./src/styles/main.scss"],"names":[],"mappings":"AAAA;EACI,sBAAA;AACJ","sourcesContent":["* {\n    box-sizing: border-box;\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "body {\n  background: #f6f6f6;\n}\n\nbody * {\n  color: rgb(84, 88, 98);\n  font-family: \"Open Sans\", \"Lucida Grande\", tahoma, verdana, arial, sans-serif;\n}\n\nmain {\n  justify-content: center;\n  align-items: center;\n  min-height: 95vh;\n  margin: 0 auto;\n}\n\n.todo-list {\n  box-shadow: rgba(0, 0, 0, 0.15) 0 2px 8px 0;\n  width: 500px;\n  max-width: 100%;\n}\n\nform button .material-icons {\n  font-size: 15px;\n}\n\n.todo-list .material-icons {\n  transition: 0.6s;\n  color: #9797a5;\n  cursor: pointer;\n}\n\n.header .material-icons {\n  font-size: 18px;\n}\n\n.todo-list .material-icons:hover {\n  color: #333;\n}\n\n.todo-list .material-icons.move {\n  cursor: move;\n}\n\n.header {\n  border-bottom: 1px solid rgba(0, 0, 0, 0.08);\n}\n\n.header,\nform,\nul {\n  background: #fff;\n  margin: 0;\n  width: 100%;\n  padding: 0;\n  list-style-type: none;\n}\n\n.header,\nh2 {\n  align-items: center;\n  color: #545862;\n  font-size: 18px;\n  font-weight: 400;\n  padding: 1rem;\n  line-height: 20px;\n  margin: 0;\n  width: calc(100% - 2rem);\n  text-overflow: ellipsis;\n  overflow: hidden;\n  white-space: nowrap;\n}\n\nform input {\n  width: calc(100% - 25px);\n  border: 0 solid transparent;\n  outline: none;\n  font-style: italic;\n  line-height: 40px;\n  height: 40px;\n  font-size: 15px;\n}\n\nform {\n  border-bottom: 1px solid rgba(0, 0, 0, 0.08);\n  width: calc(100% - 40px);\n  padding: 10px 10px 10px 30px;\n}\n\nform button {\n  background: #fff;\n  border: 0 solid transparent;\n}\n\n.todo {\n  display: flex;\n  padding: 12px;\n}\n\n.list-item {\n  width: calc(100% - 40px);\n  padding: 10px 10px 10px 30px;\n  font-size: 1rem;\n  border-bottom: 1px solid rgba(0, 0, 0, 0.08);\n  font-weight: 300;\n  align-items: center;\n}\n\n.list-item p {\n  width: calc(100% - 50px);\n  border: 0 solid transparent;\n  outline: none;\n  background: transparent;\n  height: 22px;\n  line-height: 22px;\n  padding: 0;\n  margin: 0;\n  padding-left: 20px;\n  font-weight: 300;\n  font-size: 15px;\n}\n\n.list-item .material-icons.done {\n  color: rgb(46, 138, 230);\n}\n\n.list-item p.completed {\n  text-decoration-line: line-through;\n  color: rgba(0, 0, 0, 0.45);\n}\n\n.list-item.editing {\n  background-color: #fffeca;\n}\n\n.clear-completed {\n  width: 100%;\n  text-align: center;\n  padding: 20px 6px;\n  justify-content: center;\n}\n\n.clear-completed:hover {\n  text-decoration: underline;\n  cursor: pointer;\n}\n\n.d-flex {\n  display: flex;\n}\n\n.cols {\n  flex-direction: column;\n}\n\n.s-between {\n  justify-content: space-between;\n}", "",{"version":3,"sources":["webpack://./src/styles/main.scss"],"names":[],"mappings":"AAAA;EACE,mBAAA;AACF;;AAEA;EACE,sBAAA;EACA,6EAAA;AACF;;AAEA;EACE,uBAAA;EACA,mBAAA;EACA,gBAAA;EACA,cAAA;AACF;;AAEA;EACE,2CAAA;EACA,YAAA;EACA,eAAA;AACF;;AAEA;EACE,eAAA;AACF;;AAEA;EACE,gBAAA;EACA,cAAA;EACA,eAAA;AACF;;AAEA;EACE,eAAA;AACF;;AAEA;EACE,WAAA;AACF;;AAEA;EACE,YAAA;AACF;;AAEA;EACE,4CAAA;AACF;;AAEA;;;EAGE,gBAAA;EACA,SAAA;EACA,WAAA;EACA,UAAA;EACA,qBAAA;AACF;;AAEA;;EAEE,mBAAA;EACA,cAAA;EACA,eAAA;EACA,gBAAA;EACA,aAAA;EACA,iBAAA;EACA,SAAA;EACA,wBAAA;EACA,uBAAA;EACA,gBAAA;EACA,mBAAA;AACF;;AAEA;EACE,wBAAA;EACA,2BAAA;EACA,aAAA;EACA,kBAAA;EACA,iBAAA;EACA,YAAA;EACA,eAAA;AACF;;AAEA;EACE,4CAAA;EACA,wBAAA;EACA,4BAAA;AACF;;AAEA;EACE,gBAAA;EACA,2BAAA;AACF;;AAEA;EACE,aAAA;EACA,aAAA;AACF;;AACA;EACE,wBAAA;EACA,4BAAA;EACA,eAAA;EACA,4CAAA;EACA,gBAAA;EACA,mBAAA;AAEF;;AACA;EACE,wBAAA;EACA,2BAAA;EACA,aAAA;EACA,uBAAA;EACA,YAAA;EACA,iBAAA;EACA,UAAA;EACA,SAAA;EACA,kBAAA;EACA,gBAAA;EACA,eAAA;AAEF;;AACA;EACE,wBAAA;AAEF;;AACA;EACE,kCAAA;EACA,0BAAA;AAEF;;AACA;EACE,yBAAA;AAEF;;AACA;EACE,WAAA;EACA,kBAAA;EACA,iBAAA;EACA,uBAAA;AAEF;;AACA;EACE,0BAAA;EACA,eAAA;AAEF;;AACA;EACE,aAAA;AAEF;;AACA;EACE,sBAAA;AAEF;;AACA;EACE,8BAAA;AAEF","sourcesContent":["body {\n  background: #f6f6f6;\n}\n\nbody * {\n  color: rgb(84, 88, 98);\n  font-family: 'Open Sans', 'Lucida Grande', tahoma, verdana, arial, sans-serif;\n}\n\nmain {\n  justify-content: center;\n  align-items: center;\n  min-height: 95vh;\n  margin: 0 auto;\n}\n\n.todo-list {\n  box-shadow: rgba(0, 0, 0, 0.15) 0 2px 8px 0;\n  width: 500px;\n  max-width: 100%;\n}\n\nform button .material-icons {\n  font-size: 15px;\n}\n\n.todo-list .material-icons {\n  transition: 0.6s;\n  color: #9797a5;\n  cursor: pointer;\n}\n\n.header .material-icons {\n  font-size: 18px;\n}\n\n.todo-list .material-icons:hover {\n  color: #333;\n}\n\n.todo-list .material-icons.move {\n  cursor: move;\n}\n\n.header {\n  border-bottom: 1px solid rgba(0, 0, 0, 0.08);\n}\n\n.header,\nform,\nul {\n  background: #fff;\n  margin: 0;\n  width: 100%;\n  padding: 0;\n  list-style-type: none;\n}\n\n.header,\nh2 {\n  align-items: center;\n  color: #545862;\n  font-size: 18px;\n  font-weight: 400;\n  padding: 1rem;\n  line-height: 20px;\n  margin: 0;\n  width: calc(100% - 2rem);\n  text-overflow: ellipsis;\n  overflow: hidden;\n  white-space: nowrap;\n}\n\nform input {\n  width: calc(100% - 25px);\n  border: 0 solid transparent;\n  outline: none;\n  font-style: italic;\n  line-height: 40px;\n  height: 40px;\n  font-size: 15px;\n}\n\nform {\n  border-bottom: 1px solid rgba(0, 0, 0, 0.08);\n  width: calc(100% - 40px);\n  padding: 10px 10px 10px 30px;\n}\n\nform button {\n  background: #fff;\n  border: 0 solid transparent;\n}\n\n.todo {\n  display: flex;\n  padding: 12px;\n}\n.list-item {\n  width: calc(100% - 40px);\n  padding: 10px 10px 10px 30px;\n  font-size: 1rem;\n  border-bottom: 1px solid rgba(0, 0, 0, 0.08);\n  font-weight: 300;\n  align-items: center;\n}\n\n.list-item p {\n  width: calc(100% - 50px);\n  border: 0 solid transparent;\n  outline: none;\n  background: transparent;\n  height: 22px;\n  line-height: 22px;\n  padding: 0;\n  margin: 0;\n  padding-left: 20px;\n  font-weight: 300;\n  font-size: 15px;\n}\n\n.list-item .material-icons.done {\n  color: rgb(46, 138, 230);\n}\n\n.list-item p.completed {\n  text-decoration-line: line-through;\n  color: rgba(0, 0, 0, 0.45);\n}\n\n.list-item.editing {\n  background-color: #fffeca;\n}\n\n.clear-completed {\n  width: 100%;\n  text-align: center;\n  padding: 20px 6px;\n  justify-content: center;\n}\n\n.clear-completed:hover {\n  text-decoration: underline;\n  cursor: pointer;\n}\n\n.d-flex {\n  display: flex;\n}\n\n.cols {\n  flex-direction: column;\n}\n\n.s-between {\n  justify-content: space-between;\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -505,32 +505,6 @@ function styleTagTransform(css, styleElement) {
 
 module.exports = styleTagTransform;
 
-/***/ }),
-
-/***/ "./src/list.js":
-/*!*********************!*\
-  !*** ./src/list.js ***!
-  \*********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-let todoItems = [];
-
-function addTodo(text) {
-  const todo = {
-    text,
-    checked: false,
-    id: Date.now(),
-  };
-
-  todoItems.push(todo);
-  console.log(todoItems);
-}
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (addTodo);
-
 /***/ })
 
 /******/ 	});
@@ -613,11 +587,52 @@ var __webpack_exports__ = {};
   !*** ./src/index.js ***!
   \**********************/
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _list__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./list */ "./src/list.js");
-/* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/main.scss */ "./src/styles/main.scss");
+/* harmony import */ var _src_styles_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../src/styles/main.scss */ "./src/styles/main.scss");
 
 
-console.log((0,_list__WEBPACK_IMPORTED_MODULE_0__["default"])())
+const todoItems = [
+  {
+    description: 'wash the dishes',
+    completed: false,
+    index: 1,
+  },
+  {
+    description: 'complete To Do list project',
+    completed: false,
+    index: 2,
+  },
+];
+
+const todoInput = document.querySelector('.todo-input');
+const todoButton = document.querySelector('.todo-button');
+const todoList = document.querySelector('#list-items');
+
+for(let i=0; i < todoItems.length; i+=1){
+  const todoDiv = document.createElement("div");
+  todoDiv.classList.add("todo");
+
+  const checkbox = document.createElement('input');
+  checkbox.type = "checkbox";
+  checkbox.value = 1;
+  checkbox.name = "todo[]";
+  checkbox.classList.add('material-icons');
+  todoDiv.appendChild(checkbox);
+
+  const newTodo = document.createElement("li");
+  newTodo.innerText = todoItems[i].description;
+  newTodo.classList.add('list-item');
+  todoDiv.appendChild(newTodo);
+
+
+
+  const trashButton = document.createElement('button');
+  trashButton.innerHTML = `<i class="fas fa-ellipsis-v"></i>`;
+  trashButton.classList.add('material-icons');
+  todoDiv.appendChild(trashButton);
+
+  todoList.appendChild(todoDiv);
+
+}
 })();
 
 /******/ })()
