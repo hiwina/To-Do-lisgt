@@ -1,4 +1,4 @@
-import '../src/styles/main.scss';
+import './styles/main.scss';
 
 const todoItems = [
   {
@@ -13,33 +13,28 @@ const todoItems = [
   },
 ];
 
-const todoInput = document.querySelector('.todo-input');
-const todoButton = document.querySelector('.todo-button');
 const todoList = document.querySelector('#list-items');
 
-for(let i=0; i < todoItems.length; i+=1){
-  const todoDiv = document.createElement("div");
-  todoDiv.classList.add("todo");
+for (let i = 0; i < todoItems.length; i += 1) {
+  const todoDiv = document.createElement('div');
+  todoDiv.classList.add('todo');
 
   const checkbox = document.createElement('input');
-  checkbox.type = "checkbox";
+  checkbox.type = 'checkbox';
   checkbox.value = 1;
-  checkbox.name = "todo[]";
+  checkbox.name = 'todo[]';
   checkbox.classList.add('material-icons');
   todoDiv.appendChild(checkbox);
 
-  const newTodo = document.createElement("li");
+  const newTodo = document.createElement('li');
   newTodo.innerText = todoItems[i].description;
   newTodo.classList.add('list-item');
   todoDiv.appendChild(newTodo);
 
-
-
   const trashButton = document.createElement('button');
-  trashButton.innerHTML = `<i class="fas fa-ellipsis-v"></i>`;
+  trashButton.innerHTML = '<i class="fas fa-ellipsis-v"></i>';
   trashButton.classList.add('material-icons');
   todoDiv.appendChild(trashButton);
 
   todoList.appendChild(todoDiv);
-
 }
