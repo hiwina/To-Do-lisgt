@@ -1,40 +1,28 @@
 import './styles/main.scss';
+import {
+  getmylist, addmylist, editmylist, deletemylist,
+} from './list.js';
 
-const todoItems = [
-  {
-    description: 'wash the dishes',
-    completed: false,
-    index: 1,
-  },
-  {
-    description: 'complete To Do list project',
-    completed: false,
-    index: 2,
-  },
-];
+const listGroup = document.querySelector('.todo-group');
+const newTask = document.querySelector('.todo-add').querySelector('input');
+const submitIcon = document.querySelector('.todo-add').querySelector('i');
+newTask.addEventListener('keypress', (event) => addmylist(event));
+submitIcon.addEventListener('click', () => addmylist('clicked'));
 
-const todoList = document.querySelector('#list-items');
+listGroup.addEventListener('click', (event) => {
+  const clickedItem = event.target.classList[event.target.classList.length - 1];
+  const li = event.target.parentElement;
+  if (clickedItem === 'delete-icon') deletemylist(li.id);
+});
 
-for (let i = 0; i < todoItems.length; i += 1) {
-  const todoDiv = document.createElement('div');
-  todoDiv.classList.add('todo');
+listGroup.addEventListener('keypress', (event) => {
+  const pressedItem = event.target.classList[event.target.classList.length - 1];
+  const li = event.target.parentElement;
+  if (pressedItem === 'edit-todo') editmylist({ index: li.id, event });
+});
 
-  const checkbox = document.createElement('input');
-  checkbox.type = 'checkbox';
-  checkbox.value = 1;
-  checkbox.name = 'todo[]';
-  checkbox.classList.add('material-icons');
-  todoDiv.appendChild(checkbox);
+document.querySelector('#delete-all').addEventListener('click', () => {
+  newTask.clearAll();
+});
 
-  const newTodo = document.createElement('li');
-  newTodo.innerText = todoItems[i].description;
-  newTodo.classList.add('list-item');
-  todoDiv.appendChild(newTodo);
-
-  const trashButton = document.createElement('button');
-  trashButton.innerHTML = '<i class="fas fa-ellipsis-v"></i>';
-  trashButton.classList.add('material-icons');
-  todoDiv.appendChild(trashButton);
-
-  todoList.appendChild(todoDiv);
-}
+window.addEventListener('load', () => { getmylist(); });
