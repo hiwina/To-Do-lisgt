@@ -21,8 +21,4 @@ listGroup.addEventListener('keypress', (event) => {
   if (pressedItem === 'edit-todo') editmylist({ index: li.id, event });
 });
 
-document.querySelector('#delete-all').addEventListener('click', () => {
-  newTask.clearAll();
-});
-
 window.addEventListener('load', () => { getmylist(); });
