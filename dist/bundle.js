@@ -561,7 +561,8 @@ const addmylist = (event) => {
 const editmylist = ({ index, event }) => {
   if (event.target.value === '') return;
   if (event.key === 'Enter') {
-    mylist[index].description = event.target.value;
+    event.preventDefault();
+    mylist[index - 1].description = event.target.value;
     localStorage.setItem('mylist', JSON.stringify(mylist));
   }
 };
