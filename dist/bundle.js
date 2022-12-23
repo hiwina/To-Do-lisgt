@@ -20,8 +20,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://use.fontawesome.com/releases/v6.0.0/css/all.css);"]);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "body {\n  background: #f6f6f6;\n}\n\nbody * {\n  color: rgb(84, 88, 98);\n  font-family: \"Open Sans\", \"Lucida Grande\", tahoma, verdana, arial, sans-serif;\n}\n\nmain {\n  justify-content: center;\n  align-items: center;\n  min-height: 95vh;\n  margin: 0 auto;\n}\n\n.todo-list {\n  box-shadow: rgba(0, 0, 0, 0.15) 0 2px 8px 0;\n  width: 500px;\n  max-width: 100%;\n}\n\nform button .material-icons {\n  font-size: 15px;\n}\n\n.todo-list .material-icons {\n  transition: 0.6s;\n  color: #9797a5;\n  cursor: pointer;\n}\n\n.header .material-icons {\n  font-size: 18px;\n}\n\n.todo-list .material-icons:hover {\n  color: #333;\n}\n\n.todo-list .material-icons.move {\n  cursor: move;\n}\n\n.header {\n  border-bottom: 1px solid rgba(0, 0, 0, 0.08);\n}\n\n.header,\nform,\nul {\n  background: #fff;\n  margin: 0;\n  width: 100%;\n  padding: 0;\n  list-style-type: none;\n}\n\n.header,\nh2 {\n  align-items: center;\n  color: #545862;\n  font-size: 18px;\n  font-weight: 400;\n  padding: 1rem;\n  line-height: 20px;\n  margin: 0;\n  width: calc(100% - 2rem);\n  text-overflow: ellipsis;\n  overflow: hidden;\n  white-space: nowrap;\n}\n\nform input {\n  width: calc(100% - 25px);\n  border: 0 solid transparent;\n  outline: none;\n  font-style: italic;\n  line-height: 40px;\n  height: 40px;\n  font-size: 15px;\n}\n\nform {\n  border-bottom: 1px solid rgba(0, 0, 0, 0.08);\n  width: calc(100% - 40px);\n  padding: 10px 10px 10px 30px;\n}\n\nform button {\n  background: #fff;\n  border: 0 solid transparent;\n}\n\n.todo {\n  display: flex;\n  padding: 12px;\n}\n\n.list-item {\n  width: calc(100% - 40px);\n  padding: 10px 10px 10px 30px;\n  font-size: 1rem;\n  border-bottom: 1px solid rgba(0, 0, 0, 0.08);\n  font-weight: 300;\n  align-items: center;\n}\n\n.list-item p {\n  width: calc(100% - 50px);\n  border: 0 solid transparent;\n  outline: none;\n  background: transparent;\n  height: 22px;\n  line-height: 22px;\n  padding: 0;\n  margin: 0;\n  padding-left: 20px;\n  font-weight: 300;\n  font-size: 15px;\n}\n\n.list-item .material-icons.done {\n  color: rgb(46, 138, 230);\n}\n\n.list-item p.completed {\n  text-decoration-line: line-through;\n  color: rgba(0, 0, 0, 0.45);\n}\n\n.list-item.editing {\n  background-color: #fffeca;\n}\n\n.clear-completed {\n  width: 100%;\n  text-align: center;\n  padding: 20px 6px;\n  justify-content: center;\n}\n\n.clear-completed:hover {\n  text-decoration: underline;\n  cursor: pointer;\n}\n\n.d-flex {\n  display: flex;\n}\n\n.cols {\n  flex-direction: column;\n}\n\n.s-between {\n  justify-content: space-between;\n}", "",{"version":3,"sources":["webpack://./src/styles/main.scss"],"names":[],"mappings":"AAAA;EACE,mBAAA;AACF;;AAEA;EACE,sBAAA;EACA,6EAAA;AACF;;AAEA;EACE,uBAAA;EACA,mBAAA;EACA,gBAAA;EACA,cAAA;AACF;;AAEA;EACE,2CAAA;EACA,YAAA;EACA,eAAA;AACF;;AAEA;EACE,eAAA;AACF;;AAEA;EACE,gBAAA;EACA,cAAA;EACA,eAAA;AACF;;AAEA;EACE,eAAA;AACF;;AAEA;EACE,WAAA;AACF;;AAEA;EACE,YAAA;AACF;;AAEA;EACE,4CAAA;AACF;;AAEA;;;EAGE,gBAAA;EACA,SAAA;EACA,WAAA;EACA,UAAA;EACA,qBAAA;AACF;;AAEA;;EAEE,mBAAA;EACA,cAAA;EACA,eAAA;EACA,gBAAA;EACA,aAAA;EACA,iBAAA;EACA,SAAA;EACA,wBAAA;EACA,uBAAA;EACA,gBAAA;EACA,mBAAA;AACF;;AAEA;EACE,wBAAA;EACA,2BAAA;EACA,aAAA;EACA,kBAAA;EACA,iBAAA;EACA,YAAA;EACA,eAAA;AACF;;AAEA;EACE,4CAAA;EACA,wBAAA;EACA,4BAAA;AACF;;AAEA;EACE,gBAAA;EACA,2BAAA;AACF;;AAEA;EACE,aAAA;EACA,aAAA;AACF;;AAEA;EACE,wBAAA;EACA,4BAAA;EACA,eAAA;EACA,4CAAA;EACA,gBAAA;EACA,mBAAA;AACF;;AAEA;EACE,wBAAA;EACA,2BAAA;EACA,aAAA;EACA,uBAAA;EACA,YAAA;EACA,iBAAA;EACA,UAAA;EACA,SAAA;EACA,kBAAA;EACA,gBAAA;EACA,eAAA;AACF;;AAEA;EACE,wBAAA;AACF;;AAEA;EACE,kCAAA;EACA,0BAAA;AACF;;AAEA;EACE,yBAAA;AACF;;AAEA;EACE,WAAA;EACA,kBAAA;EACA,iBAAA;EACA,uBAAA;AACF;;AAEA;EACE,0BAAA;EACA,eAAA;AACF;;AAEA;EACE,aAAA;AACF;;AAEA;EACE,sBAAA;AACF;;AAEA;EACE,8BAAA;AACF","sourcesContent":["body {\n  background: #f6f6f6;\n}\n\nbody * {\n  color: rgb(84, 88, 98);\n  font-family: 'Open Sans', 'Lucida Grande', tahoma, verdana, arial, sans-serif;\n}\n\nmain {\n  justify-content: center;\n  align-items: center;\n  min-height: 95vh;\n  margin: 0 auto;\n}\n\n.todo-list {\n  box-shadow: rgba(0, 0, 0, 0.15) 0 2px 8px 0;\n  width: 500px;\n  max-width: 100%;\n}\n\nform button .material-icons {\n  font-size: 15px;\n}\n\n.todo-list .material-icons {\n  transition: 0.6s;\n  color: #9797a5;\n  cursor: pointer;\n}\n\n.header .material-icons {\n  font-size: 18px;\n}\n\n.todo-list .material-icons:hover {\n  color: #333;\n}\n\n.todo-list .material-icons.move {\n  cursor: move;\n}\n\n.header {\n  border-bottom: 1px solid rgba(0, 0, 0, 0.08);\n}\n\n.header,\nform,\nul {\n  background: #fff;\n  margin: 0;\n  width: 100%;\n  padding: 0;\n  list-style-type: none;\n}\n\n.header,\nh2 {\n  align-items: center;\n  color: #545862;\n  font-size: 18px;\n  font-weight: 400;\n  padding: 1rem;\n  line-height: 20px;\n  margin: 0;\n  width: calc(100% - 2rem);\n  text-overflow: ellipsis;\n  overflow: hidden;\n  white-space: nowrap;\n}\n\nform input {\n  width: calc(100% - 25px);\n  border: 0 solid transparent;\n  outline: none;\n  font-style: italic;\n  line-height: 40px;\n  height: 40px;\n  font-size: 15px;\n}\n\nform {\n  border-bottom: 1px solid rgba(0, 0, 0, 0.08);\n  width: calc(100% - 40px);\n  padding: 10px 10px 10px 30px;\n}\n\nform button {\n  background: #fff;\n  border: 0 solid transparent;\n}\n\n.todo {\n  display: flex;\n  padding: 12px;\n}\n\n.list-item {\n  width: calc(100% - 40px);\n  padding: 10px 10px 10px 30px;\n  font-size: 1rem;\n  border-bottom: 1px solid rgba(0, 0, 0, 0.08);\n  font-weight: 300;\n  align-items: center;\n}\n\n.list-item p {\n  width: calc(100% - 50px);\n  border: 0 solid transparent;\n  outline: none;\n  background: transparent;\n  height: 22px;\n  line-height: 22px;\n  padding: 0;\n  margin: 0;\n  padding-left: 20px;\n  font-weight: 300;\n  font-size: 15px;\n}\n\n.list-item .material-icons.done {\n  color: rgb(46, 138, 230);\n}\n\n.list-item p.completed {\n  text-decoration-line: line-through;\n  color: rgba(0, 0, 0, 0.45);\n}\n\n.list-item.editing {\n  background-color: #fffeca;\n}\n\n.clear-completed {\n  width: 100%;\n  text-align: center;\n  padding: 20px 6px;\n  justify-content: center;\n}\n\n.clear-completed:hover {\n  text-decoration: underline;\n  cursor: pointer;\n}\n\n.d-flex {\n  display: flex;\n}\n\n.cols {\n  flex-direction: column;\n}\n\n.s-between {\n  justify-content: space-between;\n}\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "* {\n  margin: 0;\n  padding: 0;\n  font-family: sans-serif;\n}\n\nbody {\n  width: 100%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  background-color: #f1f2f5;\n}\n\n.todo-container {\n  width: 40%;\n  min-height: 60vh;\n  margin: 10vh 0;\n  background-color: #fff;\n  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);\n  border-radius: 3px;\n  padding-bottom: 50px;\n  position: relative;\n  overflow: hidden;\n}\n\n.todo-group {\n  width: 100%;\n}\n\n.todo-list {\n  height: 50px;\n  width: calc(100% - 40px);\n  padding: 0 20px;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  border-bottom: 1px #ddd solid;\n  background-color: #fff;\n}\n\n.todo-intro {\n  font-size: 15px;\n}\n\n.todo-intro-title {\n  font-weight: 600;\n  opacity: 0.9;\n  color: #545862;\n}\n\n.todo-intro i {\n  font-size: 17px;\n  opacity: 0.5;\n  color: #333;\n}\n\n.todo-add * {\n  color: #ddd;\n}\n\n.todo-add input {\n  width: 100%;\n  outline: none;\n  border: none;\n  background-color: transparent;\n  font-size: 18px;\n  font-style: italic;\n  font-weight: 400;\n}\n\n.todo-add input::placeholder {\n  color: #ddd;\n}\n\n.todo-add i {\n  font-size: 12px;\n}\n\n.todo-item {\n  position: relative;\n}\n\n.edit-focus-element {\n  content: \"\";\n  width: 100%;\n  height: 100%;\n  left: 0;\n  top: 0;\n  position: absolute;\n  z-index: 0;\n  background-color: #fff;\n}\n\n.checked-icon {\n  color: #2e8ae6;\n  cursor: pointer;\n  font-size: 18px;\n  position: relative;\n  z-index: 1;\n}\n\n.unchecked-icon {\n  font-size: 13px;\n  border: 2px #ddd solid;\n  cursor: pointer;\n  color: transparent;\n  border-radius: 3px;\n  position: relative;\n  z-index: 1;\n}\n\n.todo-item input {\n  width: calc(100% - 30px);\n  padding: 0 15px;\n  outline: none;\n  border: none;\n  background-color: transparent;\n  font-size: 15px;\n  font-weight: 100;\n  text-align: start;\n  position: relative;\n  z-index: 1;\n}\n\n.undecoration {\n  color: #000;\n  text-decoration: none;\n}\n\n.decoration {\n  opacity: 0.5;\n  color: #333;\n  text-decoration: line-through;\n}\n\n.delete-icon,\n.more-icon {\n  font-size: 17px;\n  opacity: 0.5;\n  color: #333;\n  cursor: pointer;\n}\n\n.delete-icon {\n  display: none;\n}\n\n.more-icon {\n  display: block;\n}\n\n.clear-todo {\n  width: 100%;\n  height: 50px;\n  position: absolute;\n  bottom: 0;\n  outline: none;\n  border: none;\n  background-color: #f1f2f5;\n  font-size: 16px;\n  cursor: pointer;\n}\n\n.clear-todo span {\n  opacity: 0.5;\n  color: #333;\n}\n\n.clear-todo span:hover {\n  opacity: 1;\n  color: #000;\n  text-decoration: underline;\n}\n\n.edit-todo:focus ~ .edit-focus-element {\n  background-color: #fffecb;\n}\n\n.delete-icon:active {\n  display: block;\n}\n\n.edit-todo:focus ~ .delete-icon {\n  display: block;\n}\n\n.edit-todo:focus ~ .more-icon {\n  display: none;\n}\n\n.delete-icon:active ~ .more-icon {\n  display: none;\n}", "",{"version":3,"sources":["webpack://./src/styles/main.scss"],"names":[],"mappings":"AAEA;EACE,SAAA;EACA,UAAA;EACA,uBAAA;AAAF;;AAGA;EACE,WAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,yBAAA;AAAF;;AAGA;EACE,UAAA;EACA,gBAAA;EACA,cAAA;EACA,sBAAA;EACA,yCAAA;EACA,kBAAA;EACA,oBAAA;EACA,kBAAA;EACA,gBAAA;AAAF;;AAGA;EACE,WAAA;AAAF;;AAGA;EACE,YAAA;EACA,wBAAA;EACA,eAAA;EACA,aAAA;EACA,8BAAA;EACA,mBAAA;EACA,6BAAA;EACA,sBAAA;AAAF;;AAGA;EACE,eAAA;AAAF;;AAGA;EACE,gBAAA;EACA,YAAA;EACA,cAAA;AAAF;;AAGA;EACE,eAAA;EACA,YAAA;EACA,WAAA;AAAF;;AAGA;EACE,WAAA;AAAF;;AAGA;EACE,WAAA;EACA,aAAA;EACA,YAAA;EACA,6BAAA;EACA,eAAA;EACA,kBAAA;EACA,gBAAA;AAAF;;AAGA;EACE,WAAA;AAAF;;AAGA;EACE,eAAA;AAAF;;AAGA;EACE,kBAAA;AAAF;;AAGA;EACE,WAAA;EACA,WAAA;EACA,YAAA;EACA,OAAA;EACA,MAAA;EACA,kBAAA;EACA,UAAA;EACA,sBAAA;AAAF;;AAGA;EACE,cAAA;EACA,eAAA;EACA,eAAA;EACA,kBAAA;EACA,UAAA;AAAF;;AAGA;EACE,eAAA;EACA,sBAAA;EACA,eAAA;EACA,kBAAA;EACA,kBAAA;EACA,kBAAA;EACA,UAAA;AAAF;;AAGA;EACE,wBAAA;EACA,eAAA;EACA,aAAA;EACA,YAAA;EACA,6BAAA;EACA,eAAA;EACA,gBAAA;EACA,iBAAA;EACA,kBAAA;EACA,UAAA;AAAF;;AAGA;EACE,WAAA;EACA,qBAAA;AAAF;;AAGA;EACE,YAAA;EACA,WAAA;EACA,6BAAA;AAAF;;AAGA;;EAEE,eAAA;EACA,YAAA;EACA,WAAA;EACA,eAAA;AAAF;;AAGA;EACE,aAAA;AAAF;;AAGA;EACE,cAAA;AAAF;;AAGA;EACE,WAAA;EACA,YAAA;EACA,kBAAA;EACA,SAAA;EACA,aAAA;EACA,YAAA;EACA,yBAAA;EACA,eAAA;EACA,eAAA;AAAF;;AAGA;EACE,YAAA;EACA,WAAA;AAAF;;AAGA;EACE,UAAA;EACA,WAAA;EACA,0BAAA;AAAF;;AAGA;EACE,yBAAA;AAAF;;AAGA;EACE,cAAA;AAAF;;AAGA;EACE,cAAA;AAAF;;AAGA;EACE,aAAA;AAAF;;AAGA;EACE,aAAA;AAAF","sourcesContent":["@import url(https://use.fontawesome.com/releases/v6.0.0/css/all.css);\n\n* {\n  margin: 0;\n  padding: 0;\n  font-family: sans-serif;\n}\n\nbody {\n  width: 100%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  background-color: #f1f2f5;\n}\n\n.todo-container {\n  width: 40%;\n  min-height: 60vh;\n  margin: 10vh 0;\n  background-color: #fff;\n  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);\n  border-radius: 3px;\n  padding-bottom: 50px;\n  position: relative;\n  overflow: hidden;\n}\n\n.todo-group {\n  width: 100%;\n}\n\n.todo-list {\n  height: 50px;\n  width: calc(100% - 40px);\n  padding: 0 20px;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  border-bottom: 1px #ddd solid;\n  background-color: #fff;\n}\n\n.todo-intro {\n  font-size: 15px;\n}\n\n.todo-intro-title {\n  font-weight: 600;\n  opacity: 0.9;\n  color: #545862;\n}\n\n.todo-intro i {\n  font-size: 17px;\n  opacity: 0.5;\n  color: #333;\n}\n\n.todo-add * {\n  color: #ddd;\n}\n\n.todo-add input {\n  width: 100%;\n  outline: none;\n  border: none;\n  background-color: transparent;\n  font-size: 18px;\n  font-style: italic;\n  font-weight: 400;\n}\n\n.todo-add input::placeholder {\n  color: #ddd;\n}\n\n.todo-add i {\n  font-size: 12px;\n}\n\n.todo-item {\n  position: relative;\n}\n\n.edit-focus-element {\n  content: \"\";\n  width: 100%;\n  height: 100%;\n  left: 0;\n  top: 0;\n  position: absolute;\n  z-index: 0;\n  background-color: #fff;\n}\n\n.checked-icon {\n  color: #2e8ae6;\n  cursor: pointer;\n  font-size: 18px;\n  position: relative;\n  z-index: 1;\n}\n\n.unchecked-icon {\n  font-size: 13px;\n  border: 2px #ddd solid;\n  cursor: pointer;\n  color: transparent;\n  border-radius: 3px;\n  position: relative;\n  z-index: 1;\n}\n\n.todo-item input {\n  width: calc(100% - 30px);\n  padding: 0 15px;\n  outline: none;\n  border: none;\n  background-color: transparent;\n  font-size: 15px;\n  font-weight: 100;\n  text-align: start;\n  position: relative;\n  z-index: 1;\n}\n\n.undecoration {\n  color: #000;\n  text-decoration: none;\n}\n\n.decoration {\n  opacity: 0.5;\n  color: #333;\n  text-decoration: line-through;\n}\n\n.delete-icon,\n.more-icon {\n  font-size: 17px;\n  opacity: 0.5;\n  color: #333;\n  cursor: pointer;\n}\n\n.delete-icon {\n  display: none;\n}\n\n.more-icon {\n  display: block;\n}\n\n.clear-todo {\n  width: 100%;\n  height: 50px;\n  position: absolute;\n  bottom: 0;\n  outline: none;\n  border: none;\n  background-color: #f1f2f5;\n  font-size: 16px;\n  cursor: pointer;\n}\n\n.clear-todo span {\n  opacity: 0.5;\n  color: #333;\n}\n\n.clear-todo span:hover {\n  opacity: 1;\n  color: #000;\n  text-decoration: underline;\n}\n\n.edit-todo:focus ~ .edit-focus-element {\n  background-color: #fffecb;\n}\n\n.delete-icon:active {\n  display: block;\n}\n\n.edit-todo:focus ~ .delete-icon {\n  display: block;\n}\n\n.edit-todo:focus ~ .more-icon {\n  display: none;\n}\n\n.delete-icon:active ~ .more-icon {\n  display: none;\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -505,6 +506,81 @@ function styleTagTransform(css, styleElement) {
 
 module.exports = styleTagTransform;
 
+/***/ }),
+
+/***/ "./src/list.js":
+/*!*********************!*\
+  !*** ./src/list.js ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "addmylist": () => (/* binding */ addmylist),
+/* harmony export */   "deletemylist": () => (/* binding */ deletemylist),
+/* harmony export */   "editmylist": () => (/* binding */ editmylist),
+/* harmony export */   "getmylist": () => (/* binding */ getmylist)
+/* harmony export */ });
+let mylist = JSON.parse(localStorage.getItem('mylist')) || [];// eslint-disable-line
+
+const listGroup = document.querySelector('.todo-group');
+const newTask = document.querySelector('.todo-add').querySelector('input');
+const getmylist = () => {
+  const mylistElement = mylist.map((item) => `
+        <li class="todo-list todo-item" id=${item.index}>
+          ${item.completed === true ? `
+            <i class="fa-solid fa-check checked-icon"></i>`
+    : '<i class="fa-solid fa-square unchecked-icon"></i>'}
+          <input type="text" class=${item.completed === true ? 'decoration edit-todo' : ' edit-todo'}  value="${item.description}">
+          <span class="edit-focus-element"></span>
+          <i class="fa-solid fa-save save-icon"></i>
+
+          <i class="fa-solid fa-trash-can delete-icon"></i>
+
+          <i class="fa-solid fa-ellipsis-vertical more-icon"></i>
+        </li>`).join('');
+  listGroup.innerHTML = mylistElement;
+  return listGroup;
+};
+
+const addmylist = (event) => {
+  if (newTask.value === '') return;
+  if (event.key === 'Enter' || event === 'clicked') {
+    const todoElement = {
+      description: newTask.value,
+      completed: false,
+      index: mylist.length + 1,
+    };
+    newTask.value = '';
+    mylist = [...mylist, todoElement];
+    localStorage.setItem('mylist', JSON.stringify(mylist));
+    getmylist();
+  }
+};
+
+const editmylist = ({ index, event }) => {
+  if (event.target.value === '') return;
+  if (event.key === 'Enter') {
+    event.preventDefault();
+    mylist[index - 1].description = event.target.value;
+    localStorage.setItem('mylist', JSON.stringify(mylist));
+  }
+};
+
+const deletemylist = (targetIndex) => {
+  const filterList = mylist.filter((item) => +item.index !== +targetIndex);
+  const newmylist = filterList.map((item, index) => ({
+    description: item.description,
+    completed: item.completed,
+    index: index + 1,
+  }));
+  localStorage.setItem('mylist', JSON.stringify(newmylist));
+  mylist = newmylist;
+  getmylist();
+};
+
+
+
 /***/ })
 
 /******/ 	});
@@ -588,46 +664,30 @@ var __webpack_exports__ = {};
   \**********************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/main.scss */ "./src/styles/main.scss");
+/* harmony import */ var _list_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./list.js */ "./src/list.js");
 
 
-const todoItems = [
-  {
-    description: 'wash the dishes',
-    completed: false,
-    index: 1,
-  },
-  {
-    description: 'complete To Do list project',
-    completed: false,
-    index: 2,
-  },
-];
 
-const todoList = document.querySelector('#list-items');
+const listGroup = document.querySelector('.todo-group');
+const newTask = document.querySelector('.todo-add').querySelector('input');
+const submitIcon = document.querySelector('.todo-add').querySelector('i');
+newTask.addEventListener('keypress', (event) => (0,_list_js__WEBPACK_IMPORTED_MODULE_1__.addmylist)(event));
+submitIcon.addEventListener('click', () => (0,_list_js__WEBPACK_IMPORTED_MODULE_1__.addmylist)('clicked'));
 
-for (let i = 0; i < todoItems.length; i += 1) {
-  const todoDiv = document.createElement('div');
-  todoDiv.classList.add('todo');
+listGroup.addEventListener('click', (event) => {
+  const clickedItem = event.target.classList[event.target.classList.length - 1];
+  const li = event.target.parentElement;
+  if (clickedItem === 'delete-icon') (0,_list_js__WEBPACK_IMPORTED_MODULE_1__.deletemylist)(li.id);
+});
 
-  const checkbox = document.createElement('input');
-  checkbox.type = 'checkbox';
-  checkbox.value = 1;
-  checkbox.name = 'todo[]';
-  checkbox.classList.add('material-icons');
-  todoDiv.appendChild(checkbox);
+listGroup.addEventListener('keypress', (event) => {
+  const pressedItem = event.target.classList[event.target.classList.length - 1];
+  const li = event.target.parentElement;
+  if (pressedItem === 'edit-todo') (0,_list_js__WEBPACK_IMPORTED_MODULE_1__.editmylist)({ index: li.id, event });
+});
 
-  const newTodo = document.createElement('li');
-  newTodo.innerText = todoItems[i].description;
-  newTodo.classList.add('list-item');
-  todoDiv.appendChild(newTodo);
+window.addEventListener('load', () => { (0,_list_js__WEBPACK_IMPORTED_MODULE_1__.getmylist)(); });
 
-  const trashButton = document.createElement('button');
-  trashButton.innerHTML = '<i class="fas fa-ellipsis-v"></i>';
-  trashButton.classList.add('material-icons');
-  todoDiv.appendChild(trashButton);
-
-  todoList.appendChild(todoDiv);
-}
 })();
 
 /******/ })()
