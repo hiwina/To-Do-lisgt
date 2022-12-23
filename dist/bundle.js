@@ -519,7 +519,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "addmylist": () => (/* binding */ addmylist),
 /* harmony export */   "deletemylist": () => (/* binding */ deletemylist),
 /* harmony export */   "editmylist": () => (/* binding */ editmylist),
-/* harmony export */   "getmylist": () => (/* binding */ getmylist)
+/* harmony export */   "getmylist": () => (/* binding */ getmylist),
+/* harmony export */   "mylist": () => (/* binding */ mylist),
+/* harmony export */   "updateUI": () => (/* binding */ updateUI)
 /* harmony export */ });
 let mylist = JSON.parse(localStorage.getItem('mylist')) || [];// eslint-disable-line
 
@@ -541,6 +543,11 @@ const getmylist = () => {
         </li>`).join('');
   listGroup.innerHTML = mylistElement;
   return listGroup;
+};
+
+const updateUI = (data) => {
+  mylist = data;
+  getmylist();
 };
 
 const addmylist = (event) => {
@@ -577,6 +584,39 @@ const deletemylist = (targetIndex) => {
   localStorage.setItem('mylist', JSON.stringify(newmylist));
   mylist = newmylist;
   getmylist();
+};
+
+
+
+/***/ }),
+
+/***/ "./src/status.js":
+/*!***********************!*\
+  !*** ./src/status.js ***!
+  \***********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "changeTodoStatus": () => (/* binding */ changeTodoStatus),
+/* harmony export */   "removeCompletedTodos": () => (/* binding */ removeCompletedTodos)
+/* harmony export */ });
+/* harmony import */ var _list_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./list.js */ "./src/list.js");
+
+
+const changeTodoStatus = ({ index, status }) => {
+  _list_js__WEBPACK_IMPORTED_MODULE_0__.mylist[index - 1].completed = status;
+  localStorage.setItem('mylist', JSON.stringify(_list_js__WEBPACK_IMPORTED_MODULE_0__.mylist));
+  (0,_list_js__WEBPACK_IMPORTED_MODULE_0__.getmylist)();
+};
+const removeCompletedTodos = () => {
+  const uncompletedTodos = _list_js__WEBPACK_IMPORTED_MODULE_0__.mylist.filter((element) => element.completed !== true);
+  const newTodos = uncompletedTodos.map((element, index) => {
+    element.index = index + 1;
+    return element;
+  });
+  localStorage.setItem('mylist', JSON.stringify(newTodos));
+  (0,_list_js__WEBPACK_IMPORTED_MODULE_0__.updateUI)(newTodos);
 };
 
 
@@ -665,6 +705,9 @@ var __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/main.scss */ "./src/styles/main.scss");
 /* harmony import */ var _list_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./list.js */ "./src/list.js");
+/* harmony import */ var _status_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./status.js */ "./src/status.js");
+
+
 
 
 
@@ -678,6 +721,8 @@ listGroup.addEventListener('click', (event) => {
   const clickedItem = event.target.classList[event.target.classList.length - 1];
   const li = event.target.parentElement;
   if (clickedItem === 'delete-icon') (0,_list_js__WEBPACK_IMPORTED_MODULE_1__.deletemylist)(li.id);
+  if (clickedItem === 'checked-icon') (0,_status_js__WEBPACK_IMPORTED_MODULE_2__.changeTodoStatus)({ index: li.id, status: false });
+  if (clickedItem === 'unchecked-icon') (0,_status_js__WEBPACK_IMPORTED_MODULE_2__.changeTodoStatus)({ index: li.id, status: true });
 });
 
 listGroup.addEventListener('keypress', (event) => {
@@ -685,6 +730,9 @@ listGroup.addEventListener('keypress', (event) => {
   const li = event.target.parentElement;
   if (pressedItem === 'edit-todo') (0,_list_js__WEBPACK_IMPORTED_MODULE_1__.editmylist)({ index: li.id, event });
 });
+
+const clearCompleted = document.querySelector('.clear-todo');
+clearCompleted.addEventListener('click', _status_js__WEBPACK_IMPORTED_MODULE_2__.removeCompletedTodos);
 
 window.addEventListener('load', () => { (0,_list_js__WEBPACK_IMPORTED_MODULE_1__.getmylist)(); });
 

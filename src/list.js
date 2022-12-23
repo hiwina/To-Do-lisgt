@@ -20,6 +20,11 @@ const getmylist = () => {
   return listGroup;
 };
 
+const updateUI = (data) => {
+  mylist = data;
+  getmylist();
+};
+
 const addmylist = (event) => {
   if (newTask.value === '') return;
   if (event.key === 'Enter' || event === 'clicked') {
@@ -57,5 +62,5 @@ const deletemylist = (targetIndex) => {
 };
 
 export {
-  getmylist, addmylist, editmylist, deletemylist,
+  getmylist, addmylist, editmylist, deletemylist, mylist, updateUI,
 };
